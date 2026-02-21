@@ -1,6 +1,6 @@
 # esp-idf-mavlink-monitor
-Example for receiving MAVLINK messages via UDP.
-You can use [this](https://github.com/BeyondRobotix/mavesp8266) as a transmitter for your aircraft.
+Example for receiving MAVLINK messages via UDP.   
+You can use [this](https://github.com/BeyondRobotix/mavesp8266) as a transmitter for your aircraft.   
 
 ```
 +----------+         +------------+        +----------+
