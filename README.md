@@ -5,13 +5,13 @@ You can use [mavesp8266](https://github.com/BeyondRobotix/mavesp8266) as a WiFi 
 The Flight Controller sends and receives MavLink messages via UART.    
 The mavesp8266 forwards MavLink messages from UART to WiFi.   
 The mavesp8266 forwards MavLink messages from WiFi to UART.   
-The ESP32 sends and receives MavLink messages via the access point.   
+The ESP32 sends and receives MavLink messages over UDP.   
 ```
 +-----------------------------------------------+
 | AirCraft/Drone                                |
-| +-----------------+          +------------+   |      +-----------+         +----------+
-| |Flight Controller|<--UART-->| mavesp8266 |<--|UDP-->|AccessPoint|<--UDP-->|  ESP32   |
-| +-----------------+          +------------+   |      +-----------+         +----------+
+| +-----------------+          +------------+   |      +----------+
+| |Flight Controller|<--UART-->| mavesp8266 |<--|UDP-->|  ESP32   |
+| +-----------------+          +------------+   |      +----------+
 +-----------------------------------------------+
 ```
 
