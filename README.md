@@ -19,7 +19,7 @@ The ESP32 acts as a ground station.
 # Software requirements   
 ESP-IDF V5.0 or later.   
 ESP-IDF V4.4 release branch reached EOL in July 2024.   
-I used [this](https://github.com/mavlink/c_library_v2) library.   
+I used [this](https://github.com/mavlink/c_library_v2) library as a component.   
 
 # Installation   
 
