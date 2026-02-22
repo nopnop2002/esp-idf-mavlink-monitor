@@ -6,6 +6,7 @@ The Flight Controller sends and receives MavLink messages via UART.
 The mavesp8266 forwards MavLink messages from UART to WiFi.   
 The mavesp8266 forwards MavLink messages from WiFi to UART.   
 The ESP32 sends and receives MavLink messages over UDP.   
+The ESP32 acts as a ground station.   
 ```
 +-----------------------------------------------+
 | AirCraft/Drone                                |
