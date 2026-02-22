@@ -1,11 +1,18 @@
 # esp-idf-mavlink-monitor
 Example for receiving MAVLINK messages via UDP.   
-You can use [this](https://github.com/BeyondRobotix/mavesp8266) as a transmitter for your aircraft.   
+You can use [mavesp8266](https://github.com/BeyondRobotix/mavesp8266) as a WiFi Access Point and MavLink Bridge.   
 
+The Flight Controller sends and receives MavLink messages via UART.    
+The mavesp8266 forwards MavLink messages from UART to WiFi.   
+The mavesp8266 forwards MavLink messages from WiFi to UART.   
+The ESP32 sends and receives MavLink messages via the access point.   
 ```
-+----------+         +------------+        +----------+
-| aircraft |--UART-->| mavesp8266 |--UDP-->|  ESP32   |
-+----------+         +------------+        +----------+
++-----------------------------------------------+
+| AirCraft/Drone                                |
+| +-----------------+          +------------+   |      +-----------+         +----------+
+| |Flight Controller|<--UART-->| mavesp8266 |<--|UDP-->|AccessPoint|<--UDP-->|  ESP32   |
+| +-----------------+          +------------+   |      +-----------+         +----------+
++-----------------------------------------------+
 ```
 
 # Software requirements   
